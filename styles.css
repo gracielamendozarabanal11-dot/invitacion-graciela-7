@@ -1,0 +1,37 @@
+*{box-sizing:border-box}
+:root{--pink:#fff4f7;--pink2:#fde7ef;--rose:#a84265;--wine:#861f45;--text:#76545f;--line:#e7b9c8}
+html{scroll-behavior:smooth}
+body{margin:0;background:#fff8fa;color:var(--text);font-family:Montserrat,sans-serif}
+.hidden{display:none!important}
+.envelope-screen{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:radial-gradient(circle,#fff 10%,#fff4f7 75%);position:relative;overflow:hidden}
+.tiny{font-family:Playfair Display,serif;font-size:11px;letter-spacing:3px;line-height:1.8;color:#8f5567}
+.heartline{color:#b44d6d;font-size:14px;letter-spacing:2px}
+.envelope-button{border:0;background:transparent;cursor:pointer;position:relative;z-index:20;padding:30px 10px}
+.envelope{position:relative;width:290px;height:190px;margin:auto;filter:drop-shadow(0 16px 20px rgba(110,45,68,.18));perspective:900px}
+.front{position:absolute;inset:0;background:linear-gradient(135deg,#efb0c3,#d985a2);clip-path:polygon(0 0,50% 58%,100% 0,100% 100%,0 100%);z-index:4}
+.flap{position:absolute;inset:0;background:#f2bdcc;clip-path:polygon(0 0,100% 0,50% 60%);transform-origin:top;z-index:6;transition:transform 1s ease}
+.letter{position:absolute;left:18px;right:18px;bottom:18px;height:150px;background:#fffdfd;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:transform 1s ease}
+.letter span{font:50px 'Great Vibes';color:var(--wine)}.letter b{color:var(--rose)}
+.seal{position:absolute;left:50%;bottom:35px;transform:translateX(-50%);width:48px;height:48px;border-radius:50%;background:#b44d6d;color:#fff;z-index:7;display:flex;align-items:center;justify-content:center;font-size:22px;border:3px solid #e6aabd}
+.envelope-button.open .flap{transform:rotateX(-180deg);z-index:1}.envelope-button.open .letter{transform:translateY(-90px)}
+.tap{display:block;margin-top:30px;font-size:10px;letter-spacing:2px;color:#8d5969}.petals{position:absolute;color:#e6a8ba;font-size:50px}.p1{top:10%;left:12%}.p2{right:10%;bottom:15%}
+#invitation{max-width:900px;margin:auto;background:#fffafb;overflow:hidden}
+.hero{min-height:500px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;position:relative}
+.floral{background-color:#fff6f8;background-image:radial-gradient(circle at 8% 8%,rgba(221,125,156,.14),transparent 18%),radial-gradient(circle at 92% 92%,rgba(178,57,99,.1),transparent 20%)}
+.floral:before,.floral:after{content:"✿ ❀";position:absolute;color:#e5a1b6;font-size:32px;line-height:1.5;opacity:.75}
+.floral:before{top:12px;left:15px}.floral:after{bottom:12px;right:15px}
+.hero .tiny{margin-top:20px}.crown{font-size:48px;color:#b16a83;margin:10px}
+.hero h1{font:82px/1.05 'Great Vibes';color:var(--wine);margin:8px 0}.hero h1 span{font-size:94px}
+.ornament{font-size:28px;color:var(--rose)}
+.floral-corner{position:absolute;color:#df9bb0;font-size:50px;line-height:.9}.floral-corner.left{left:15px;top:15px}.floral-corner.right{right:15px;bottom:15px}
+.music-card{margin:18px 20px;padding:16px 20px;border:1px solid #efcbd6;border-radius:18px;display:flex;align-items:center;gap:14px;position:relative;box-shadow:0 8px 25px rgba(150,70,98,.06)}
+.song-icon{font-size:30px;color:var(--rose)}.song-info{flex:1;text-align:left}.song-info b{display:block;font-family:Playfair Display;font-size:17px;color:var(--wine)}.song-info span{font-size:10px}.bar{height:3px;background:#f1d7df;margin-top:9px;border-radius:5px}.bar i{display:block;width:0;height:100%;background:var(--rose)}
+.music-card button{border:0;background:var(--rose);color:#fff;border-radius:50%;width:42px;height:42px}
+.info-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:18px;padding:20px}.count-card,.dress,.pass,.presents,.rsvp,.detail{border:1px solid #efcdd8;border-radius:18px;position:relative;overflow:hidden}
+.count-card{padding:38px 20px;display:flex;flex-direction:column;justify-content:center;min-height:320px}.script-label{font:45px 'Great Vibes';color:var(--wine);margin:0;text-align:center}.countdown{display:flex;justify-content:center;margin-top:25px}.countdown div{padding:5px 15px;text-align:center;border-right:1px solid #e5c1cc}.countdown div:last-child{border:0}.countdown b{font:30px Playfair Display;color:#6e4554;display:block}.countdown span{font-size:7px;letter-spacing:1px}
+.details{display:flex;flex-direction:column;gap:18px}.detail{padding:25px;text-align:center}.detail-icon{font-size:27px;color:var(--rose)}.label{font-size:9px;letter-spacing:3px;color:#9d6275}.detail>p:not(.label){font:19px Playfair Display;color:#714b58}.detail strong{color:var(--wine)}.detail .small{font:12px/1.7 Montserrat;color:#876a73}.button,.whatsapp{display:inline-block;background:var(--rose);color:#fff;text-decoration:none;padding:11px 22px;border-radius:25px;font-size:10px;letter-spacing:1px;margin-top:8px}
+.dress{padding:30px;text-align:center}.dress .script-label{font-size:42px}.figures{display:flex;justify-content:center;gap:45px;font-size:55px;margin:15px}.reserve{font-size:11px;letter-spacing:1px}.swatches{display:flex;justify-content:center;gap:12px}.swatches i{width:35px;height:35px;border-radius:50%;background:#e8a0b7;display:block}.swatches i:last-child{background:#9c3155}
+.pass{padding:30px;text-align:center}.pass-icon{font-size:35px}.pass p{font-size:11px}.pass strong{font:30px 'Great Vibes';color:var(--wine)}
+.presents{margin:0 20px 20px;min-height:470px;padding:65px 25px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}.gift{font-size:55px}.presents h2{font:29px Montserrat;letter-spacing:4px;color:#9b4d68}.curly{color:var(--rose)}.gift-text{font:26px/1.65 'Great Vibes';color:#774d5d;max-width:650px}.flowers-bottom{color:#dda0b3;font-size:30px;margin-top:25px}
+.rsvp{margin:0 20px 30px;min-height:400px;padding:70px 20px;text-align:center}.rsvp h2{font:65px 'Great Vibes';color:var(--wine);margin:10px}.rsvp p{font:14px/1.7 Montserrat}.whatsapp{border-radius:8px;font-size:11px;padding:14px 28px}.whatsapp small{font-size:9px}.closing{font:34px 'Great Vibes'!important;color:var(--wine)!important;margin-top:30px}
+@media(max-width:650px){.hero h1{font-size:68px}.hero h1 span{font-size:78px}.info-grid{grid-template-columns:1fr;padding:12px}.countdown b{font-size:25px}.countdown div{padding:5px 8px}.gift-text{font-size:23px}.rsvp h2{font-size:55px}.music-card{margin:12px}.presents,.rsvp{margin-left:12px;margin-right:12px}}

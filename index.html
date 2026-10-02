@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Graciela | Mis 15 años</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="envelopeScreen" class="envelope-screen">
+  <div class="petals p1">✿</div><div class="petals p2">❀</div>
+  <p class="tiny">UNA INVITACIÓN<br>ESPECIAL PARA TI</p>
+  <div class="heartline">──────── ♡ ────────</div>
+  <button id="openEnvelope" type="button" onclick="openInvitation()" aria-label="Abrir invitación">
+    <div class="envelope">
+      <div class="flower-sprig">✿</div>
+      <div class="flap"></div>
+      <div class="letter"><span>Graciela</span><b>♡</b></div>
+      <div class="front"></div>
+      <div class="seal">♡</div>
+    </div>
+    <span class="tap">TOCA EL SOBRE PARA ABRIR</span>
+  </button>
+</div>
+
+<main id="invitation" class="hidden">
+
+<section class="hero floral">
+  <div class="floral-corner left">✿<br>❀</div><div class="floral-corner right">❀<br>✿</div>
+  <p class="tiny">Con la bendición de Dios<br>y mi familia.</p>
+  <div class="crown">♕</div>
+  <h1>Mis<br><span>15 Años</span></h1>
+  <div class="ornament">♡</div>
+</section>
+
+<section class="music-card floral">
+  <div class="song-icon">♪</div>
+  <div class="song-info"><b>Iris</b><span>Goo Goo Dolls</span><div class="bar"><i id="progress"></i></div></div>
+  <button id="musicBtn">▶</button>
+  <audio id="audio" src="iris.mp3" preload="auto"></audio>
+</section>
+
+<section class="info-grid">
+  <div class="count-card floral">
+    <p class="script-label">Falta muy poquito</p>
+    <div class="heartline">──── ♡ ────</div>
+    <div class="countdown">
+      <div><b id="days">0</b><span>DÍAS</span></div>
+      <div><b id="hours">00</b><span>HORAS</span></div>
+      <div><b id="minutes">00</b><span>MINUTOS</span></div>
+      <div><b id="seconds">00</b><span>SEGUNDOS</span></div>
+    </div>
+  </div>
+
+  <div class="details">
+    <div class="detail floral"><div class="detail-icon">♡</div><p class="label">FECHA</p><p>18 de Octubre del 2026</p></div>
+    <div class="detail floral"><div class="detail-icon">◷</div><p class="label">HORA</p><p>12:00 p. m.</p></div>
+    <div class="detail floral"><div class="detail-icon">⌖</div><p class="label">LUGAR</p><p><strong>SALONES ROMA</strong></p><p class="small">Pasando el grifo Las Torrecitas,<br>la primera cuadra a la izquierda.<br>Jr. María Delia cuadra 4 - Cajamarca</p>
+      <a class="button" href="https://maps.app.goo.gl/tH89Vq44BTtFFuzWA?g_st=awb" target="_blank">📍 Ver ubicación</a>
+    </div>
+  </div>
+
+  <div class="dress floral">
+    <p class="script-label">Vestimenta</p><p class="label">SPORTE ELEGANTE</p>
+    <div class="figures"><span>👗</span><span>🤵</span></div>
+    <p class="reserve">Reservar color<br><b>ROSADO Y GUINDA</b></p>
+    <div class="swatches"><i></i><i></i></div>
+  </div>
+
+  <div class="pass floral"><div class="pass-icon">🎟</div><p>Hemos reservado</p><strong>1 pase para usted</strong><div>♡</div></div>
+</section>
+
+<section class="presents floral">
+  <div class="gift">🎁</div>
+  <h2>PRESENTES</h2>
+  <div class="curly">────── ♡ ──────</div>
+  <p class="gift-text">Tu presencia es lo más importante para mí,<br>
+  te agradezco de antemano por<br>
+  considerar hacerme un regalo.</p>
+  <div class="flowers-bottom">✿ ❀ ✿ ❀ ✿</div>
+</section>
+
+<section class="rsvp floral">
+  <div class="ornament">❦</div>
+  <h2>¿Nos acompañas?</h2>
+  <p>Confirma tu asistencia y comparte conmigo<br>este día tan especial.</p>
+  <a class="whatsapp" href="https://wa.me/51952388205?text=Hola%20Graciela%20%F0%9F%92%97%20confirmo%20mi%20asistencia%20a%20tus%2015%20a%C3%B1os." target="_blank">💬 CONFIRMAR ASISTENCIA<br><small>AL WHATSAPP &nbsp; +51 952 388 205</small></a>
+  <p class="closing">♡ Te esperamos ♡</p>
+</section>
+
+</main>
+<script src="script.js"></script>
+</body>
+</html>
